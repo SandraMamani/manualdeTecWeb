@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: x-large;
+}
+
+a{
+    color: rgb(0, 238, 255);
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 19px;
+    padding:10px  
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #031e79;
+    opacity: 0.87;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 5px 0;
+}
+
+header a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.center{
+    text-align: center;
+}
+
+img{
+    padding-right: 21px;
+}
+
+nav a:hover{
+    background-color: rgb(37, 133, 197);
+    padding:10px;
+    border-radius: 15%;
+    color: whitesmoke;
+}
+
+q{
+    color: white;
+    text-align: center;
+    padding-left: 12px;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 17px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    background: linear-gradient( rgb(71, 96, 165),#272979d2);
+    opacity: 0.87;
+    padding-left: 12px;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 1.5em;
+    color: aqua;
+}
+h5{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.5em;
+}
+
+p{ 
+    padding-left: 10 px;
+    padding-right: 10 px;
+    color: white;
+    background-color:rgba(20, 20, 20, 0.438);
+    text-align: center, right, left;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+body{    
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: url(img/rota.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+}
+
+table{
+    background-color: rgba(93, 119, 158, 0.384);
+    color: black;
+    font-size: 14px;
+    table-layout: fixed;
+    opacity: 0.9;
+    width: 100%;
+    border-bottom: 155px;
+}
+
+thead{
+    background-color: rgba(36, 196, 196, 0.925);
+    border-bottom: solid 6px rgb(19, 100, 124);
+    color: white;
+}
+
+th{
+    padding: 15px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td{
+    padding: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+
+table, th, td{
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+tbody tr:hover {
+    background: rgba(3, 4, 77, 0.548);
+}
+
+footer{
+    background-color: #031e79;
+    padding: 1em 0;
+    position: fixed;
+    opacity: 0.8;
+    color: white;
+    width: 100%;
+    border-top: -2px solid #000;
+    bottom: 0;
+}
+footer p{
+    background-color: #031e79;
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/j-removebg-preview.png">
+
+    <title>CSS</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3 class="manual-titulo">Manual de Desarrollo Web</h3>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="manualHtml.html" class="nav-link">Html</a>
+            <a href="manualCss.html" class="nav-link">Css</a>
+        </nav>
+    </header>
+    <main>
+        <h1>MANUAL DE CSS</h1>
+        <h4>Que es css</h4>
+        <p>El código CSS hace la vida más fácil al desarrollador front-end al separar las estructura de un documento HTML de su presentación. Dicho de otro modo el HTML actuaría como es esqueleto de la web, definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la web define su aspecto final.
+
+            Siguiendo este fundamento resulta muy fácil para un diseñador web realizar cambios en la apariencia de una web sin afectar de manera dramática a su contenido. El contenido siempre será el mismo, solo cambia como aquello que podemos ver. CSS es fácil de entender y aprender, y nos da un potente control de cómo diseñar los documentos HTML.</p>
+        <br>
+        
+        <H2>RECURSOS PARA DESARROLLADORES</H2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripción</th>
+                    <th>Documentación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MDN</td>
+                    <td>Documentacion sobre css,html,JavaScript</td>
+                    <td><a href="https://developer.mozilla.org/es/" target="_blank">MND</a></td>
+                </tr>
+                <tr>
+                    <td>Color Hunt</td>
+                    <td>Nos muestra diferentes paletas de colores para usar en el desarrollo de la página web</td>
+                    <td><a href="https://colorhunt.co/" target="_blank">Color Hunt</a></td>
+                </tr>
+                <tr>
+                    <td>Color Picker</td>
+                    <td>Nos ayuda a encontrar el color que queremos en hexadecimal o en formato para rgba</td>
+                    <td><a href="https://hslpicker.com/" target="_BLANK">Color Picker</a></td>
+                </tr>
+            </tbody>             
+        </table>
+        <br>
+        
+        <h2>COLORES CSS</h2>
+        <table>
+            <thead>
+                <th>Elemento</th>
+                <th>Descripción</th>
+                <th>Sintaxis</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>Podemos especificar un color usando un nombre predefinido. Por ejemplo podemos especificar que el color del párrafo sea rojo con la siguiente regla </td>
+                    <td><code>p{ color: red; }</code></td>
+                </tr>
+                <tr>
+                    <td>rgb</td>
+                    <td>Para definir un color como la mezcla las intensidades de los colores primarios podemos usar la función</td>
+                    <td><code>elemento{ color: rgb(20,20,20); } </code></td>
+                </tr>
+                <tr>
+                    <td>rgba</td>
+                    <td>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios. 
+                        <td><code>elemento{ color: rgba(20,20,20,1); } </code></td>
+                </tr>
+                <tr>
+                    <td>hexadecimal</td>
+                    <td>Podemos utilizar un número hexadecimal para definir un color. Es una alternativa a la función  rgb, es decir permite definir un color como la mezcla de intensidades de los colores primarios</td>
+                    <td><code>elemento{ color: #numero_hexadecimal; } </code></td>
+                </tr>
+                <tr>
+                    <td>hsl</td>
+                    <td>En este modelo utilizamos conceptos que son más fáciles de comprender. 
+                        En CSS para poder trabajar con este modelo tenemos la siguiente opción: 
+                    </td>
+                    <td><code>elemento{ color: hsl(h,s,l); } </code></td>
+                </tr>
+                <tr>
+                    <td>hsla</td>
+                    <td>Podemos definir la transparencia de un color usando la función hsla, esta función es idéntica a la función hsl, pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.
+                    </td>
+                    <td><code>elemento{ color: hsla(h,s,l,a); } </code></td>
+                </tr>
+            </tbody>      
+        </table>
+        
+        <br>
+        <hr>
+        <h2> SELECTORES </h2>
+        <table>
+            <thead>
+                <th>Elemento</th>
+                <th>Descripción</th>
+                <th>Sintaxis</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Selector Universal ( * )	</td>
+                    <td>Selecciona todos los elementos</td>
+                    <td><code>*{ declaraciones; }</code></td>
+                </tr>
+                <tr>
+                    <td>Selector de Tipo</td>
+                    <td>Permite seleccionar elementos usando el nombre del elemento</td>
+                    <td><code>elemento{ declaraciones; } </code></td>
+                </tr>
+                <tr>
+                    <td>Selector de clase</td>
+                    <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos. Para que los elementos sean seleccionados, su atributo class debe incluir un valor que coincida con el valor del selector</td>
+                        <td><code> p class=”foo bar”> ¡HOLA MUNDO! </p>  p class=”foo baz” > ¡ADIÓS MUNDO! </p> .foo{ declaraciones; } </code></td>
+                </tr>
+                <tr>
+                    <td>Selector de ID</td>
+                    <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el selector.</td>
+                    <td><code>#foo{ declaraciones; }</code></td>
+                </tr>
+            </tbody>      
+        </table>
+
+        <br>
+
+        <table>
+            <thead>
+                <th>Descripción</th>
+                <th>Sintaxis</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Selecciona elementos que tengan un atributo con el nombre attr</td>
+                    <td>selector[attr] { … }</td>
+                </tr>
+                <tr>
+                    <td>Selecciona elementos que tengan un atributo con el nombre attr. El único valor del atributo es exactamente value</td>
+                    <td>selector[attr=value] { … }</td>    
+                </tr>
+                <tr>
+                    <td>Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del atributo es exactamente value</td>
+                    <td>selector[attr~=value] { … }</td>
+                </tr>
+                <tr>
+                    <td>Selecciona los elementos que tengan un atributo con el nombre attr. El primero de los  valores del atributo empieza con value</td>
+                    <td>selector[attr ^= value] { … }</td>
+                </tr>
+                <tr>
+                    <td>Selecciona los elementos que tengan un atributo con el nombre attr. El último de los  valores del atributo termina con value</td>
+                    <td>selector[attr $= value] { … }</td>
+                </tr>
+                <tr>
+                    <td>Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del atributo contiene al menos una ocurrencia de  value</td>
+                    <td>selector[attr *= value] { … } </td>
+                </tr>
+            </tbody>      
+        </table>
+
+        <br>
+
+        <table>
+            <thead>
+                <th>Elemento</th>
+                <th>Descripción</th>
+                <th>Sintaxis</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pseudo-Classes</td>
+                    <td>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el documento(:nth-child) e interacción del usuario(:hover)</td>
+                    <td><code>selector:pseudo-class { … } button:hover{color: blue;}</code></td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Elementos</td>
+                    <td>Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados</td>
+                    <td><code>selector::pseudo-elemento { … } p::first-line{color: blue;} </code></td>
+                </tr>
+                <tr>
+                    <td>Unión de Selectores</td>
+                    <td>Selecciona la unión de los elementos seleccionados por cada selector de la lista</td>
+                    <td><code>Selector-1, Selector-2, … {   }</code></td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Descendientes</td>
+                    <td>Seleccionamos todos los elementos seleccionados por B que son descendientes de los elementos seleccionados por A</td>
+                    <td><code>A B {}</code></td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Hijos</td>
+                    <td>Seleccionamos todos los elementos seleccionados por B que son hijos de los elementos seleccionados por  A</td>
+                    <td><code>A>B{}</code></td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Hermanos</td>
+                    <td>Seleccionamos todos los elementos  seleccionados por B que son hermanos de los elementos seleccionados por A</td>
+                    <td><code>A~B {}</code></td>
+                </tr>
+                <tr>
+                    <td>Seleccionar Elementos Hermanos Adyacentes</td>
+                    <td>Seleccionamos todos los elementos  seleccionados por B que son hermanos y que están inmediatamente despues de los elementos seleccionados por A</td>
+                    <td><code>A+B {}</code></td>
+                </tr>
+            </tbody>      
+        </table>
+       
+        <br>
+        
+        <h2>LONGITUDES EN CSS</h2>
+        <table>
+            <thead>
+                <th>Elemento</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pixel</td>
+                    <td>Un píxel es la menor unidad homogénea en color que forma parte de una imagen digital</td>
+                    <td>-20px</td>
+                </tr>
+            </tbody>      
+        </table>
+
+        <br>
+
+        <h2>UNIDADES ABSOLUTAS</h2>
+        <table>
+            <thead>
+                <th>Unidad</th>
+                <th>Nombre</th>
+                <th>Equivalente a</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>px</td>
+                    <td>Pixel</td>
+                    <td>0.265</td>
+                </tr>
+            </tbody>      
+        </table>
+
+        <br>
+
+        <h2>UNIDADES RELATIVAS</h2>
+        <table>
+            <thead>
+                <th>Unidad</th>
+                <th>Relativo a</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rem</td>
+                    <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre.
+                        Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del width del elemento padre.  </td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                    <td>Relativo al ancho del viewport</td>
+                </tr>
+                <tr>
+                    <td>vh</td>
+                    <td>Relativo al alto del viewport</td>
+                </tr>
+            </tbody>      
+        </table>
+        <br>
+        <table>
+            <h2>MODELO DE CAJAS</h2>
+            <thead>
+                <tr>
+                    <th>Partes</th>
+                    <th>Definición</th>
+                    <th colspan="2">Propiedades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Contenido</td>
+                    <td rowspan="4">Área donde se encuentra el contenido del elemento(texto, imagen, etc)</td>
+                    <td>min-width</td>
+                    <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a></td>
+                </tr>
+                <tr>
+                    <td>max-width</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                    <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank">height</a></td>
+                </tr>
+                <tr>
+                    <td>max-height</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Relleno</td>
+                    <td rowspan="4">Es el área de relleno del elemento.</td>
+                    <td>padding-top</td>
+                    <td rowspan="4"><a href="https://www.w3schools.com/css/css_padding.asp">padding</a></td>
+                </tr>
+                <tr>
+                    <td>padding-right</td>
+                </tr>
+                <tr>
+                    <td>padding-bottom</td>
+                </tr>
+                <tr>
+                    <td>padding-left</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">Borde</td>
+                    <td rowspan="3">Es el borde del elemento.</td>
+                    <td>border-width</td>
+                    <td rowspan="3"><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">border</a></td>
+                </tr>
+                <tr>
+                    <td>border-style</td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Margen</td>
+                    <td rowspan="4">Es el margen del elemento.</td>
+                    <td>margin-top</td>
+                    <td rowspan="4"><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">margin</a></td>
+                </tr>
+                <tr>
+                    <td>margin-right</td>
+                </tr>
+                <tr>
+                    <td>margin-bottom</td>
+                </tr>
+                <tr>
+                    <td>margin-left</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <table>
+            <h2>MEDIA FEATURE</h2>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>width</td>
+                    <td>Usada para verificar el ancho exacto de la ventana del navegador.</td>
+                </tr>
+                <tr>
+                    <td>max-width</td>
+                    <td>Usada para verificar el ancho mas pequeño de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>min-width</td>
+                    <td>Usada para verificar el ancho mas grande de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Usada para verificar el alto exacto de la ventana del navegador.</td>
+                </tr>
+                <tr>
+                    <td>max-height</td>
+                    <td>Usada para verificar el alto mas pequeño de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                    <td>Usada para verificar el alto mas grande de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>aspect-ratio</td>
+                    <td>Usada para verificar la relación ancho/alto del viewport</td>
+                </tr>
+                <tr>
+                    <td>orientation</td>
+                    <td>Usada para verificar la orientación de la pantalla( portrait / landscape)</td>
+                </tr>
+                <tr>
+                    <td>resolution</td>
+                    <td>Usada para verificar la densidad de pixeles del dispositivo.</td>
+                </tr>
+                <tr>
+                    <td>grid</td>
+                    <td>Usada para verificar si el dispositivo usa una pantalla basada en grid o bitmap.</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Usada para verificar el numero de bits por componente de color (red, green, blue) del dispositivo.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div>
+        <h5> </h5>
+        <br>
+        <h5> </h5>
+        <br>
+        <h5> </h5>
+        <br>
+   </div>
+    
+    <footer>
+        <address>sandra.mamani@ucb.edu.bo</address>
+    </footer>
+
+</body>
+</html>

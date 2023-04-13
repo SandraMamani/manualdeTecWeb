@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/j-removebg-preview.png">
+
+    <title>HTML</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+           <h3 class="manual-titulo">Manual de Desarrollo Web</h3>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="manualHtml.html" class="nav-link">Html</a>
+            <a href="manualCss.html" class="nav-link">Css</a>
+        </nav>
+    </header>
+<main>
+    <div>
+        <h1> MANUAL DE HTML </h1>
+        
+        <h4>Qué es HTML ?</h4>
+        <p>HTML se trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas, vídeos, etc.                El HTML se creó en un principio con objetivos divulgativos de información con texto y algunas imágenes. No se pensó que llegara a ser utilizado para crear área de ocio y consulta con carácter multimedia (lo que es actualmente la web), de modo que, el HTML se creó sin dar respuesta a todos los posibles usos que se le iba a dar y a todos los colectivos de gente que lo utilizarían en un futuro. Sin embargo, pese a esta deficiente planificación, si que se han ido incorporando modificaciones con el tiempo, estos son los estándares del HTML. Numerosos estándares se han presentado ya.</p>
+        <br>
+        
+        <h2>RECURSOS PARA DESARROLLADORES</h2>
+        <div id="container">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Enlace</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MDN</td>
+                        <td>MDN Web Docs es una plataforma de aprendizaje para las tecnologías Web y el software con el que funciona la Web, incluyendo estándares Web como CSS, HTML, y JavaScript,
+                            desarrollo de aplicaciones para web abierta
+                            y desarrollo de complementos para Firefox</td>
+                        <td><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Ir a la pagina </a></td>
+                    </tr>
+                    <tr>
+                        <td>HTML STANDARD</td>
+                        <td>Especificacion de HTML.</td>
+                        <td><a href="https://html.spec.whatwg.org/" target="_blank">Ir a la pagina </a></td>
+                    </tr>
+                    <tr>
+                        <td>Validator</td>
+                        <td>Esta herramienta es un experimento en curso para mejorar la verificación de HTML y su comportamiento sigue sujeto a cambios.</td>
+                        <td>
+                            <a href="https://validator.w3.org" target="_blank">Ir a la pagina</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Git Hub</td>
+                        <td>Github es un portal creado para alojar el código de las aplicaciones
+                                de cualquier desarrollador, y que fue comprada por Microsoft en junio del 2018.
+                                La plataforma está creada para que los desarrolladores suban el código de sus aplicaciones y herramientas, 
+                                y que como usuario no sólo puedas descargarte la aplicación,
+                                sino también entrar a su perfil para leer sobre ella o colaborar con su desarrollo.</td>
+                        <td> <a href="https://github.com/" target="_blank">Ir a la pagina</a></td>
+                    </tr>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>Visual Studio Code es un editor de código fuente desarrollado por Microsoft 
+                            para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git,
+                                resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.</td>
+                        <td> <a href="https://code.visualstudio.com/" target="_blank">Ir a la pagina</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    <br>
+    <h2>ELEMENTOS HTML</h2>
+
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                <th>Elemento</th>
+                <th>Descripción</th>
+                <th>Enlace</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&ltdiv&gt</td>
+                    <td>div de "division" -división . Sirve para crear secciones o agrupar contenidos.</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltp&gt</td>
+                    <td>Los párrafos se utilizan para dividir un texto largo en bloques de texto más
+                        pequeños, más fáciles de digerir y que hablan normalmente de una sola idea.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltbr&gt</td>
+                    <td>El elemento vacío de salto de línea br hace que el navegador avance a la
+                        siguiente línea antes de mostrar el siguiente elemento o porción de texto en
+                        una página web.Es útil para escribir direcciones o poemas.
+                        No utilices br para incrementar el espacio entre líneas de texto.
+                            </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/br" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&lthr&gt</td>
+                    <td>El elemento hr representa una transición entre párrafos a un tema separado,
+                        pero relacionado.
+                        Existe un efecto visual, se muestra una línea horizontal en el navegador.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/hr " target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltwbr&gt</td>
+                    <td>El elemento vacío wbr le indica al navegador donde podría razonablemente
+                        insertar un salto de línea para ajustar el contenido que es más grande que la
+                        ventana actual del navegador. Es el navegador el que toma la decisión de si
+                        realmente se utiliza o no un salto de línea.</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltsup&gt</td>
+                    <td>El elemento sup permite definir superíndices.</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sup" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltsub&gt</td>
+                    <td>El elemento sub permite definir subíndices.Los casos de uso apropiados para sub incluyen (pero no necesariamente se
+                        limitan a crear números que hacen referencia a las notas al pie
+                        ,fórmulas matemáticas,
+                        fórmulas químicas.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sub" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltstrong&gt</td>
+                    <td>El elemento strong indica que su contenido tiene una gran importancia,
+                        seriedad o urgencia. Los navegadores normalmente muestran el contenido en
+                        negrita
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/strong" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltem&gt</td>
+                    <td>Cuando queremos dar énfasis al lenguaje hablado, acentuamos y prolongamos
+                        la pronunciación de ciertas palabras y así alteramos sutilmente el significado
+                        de lo que decimos. De manera similar, en el lenguaje escrito ponemos palabras
+                        en cursiva para denotar énfasis.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/em " target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltmark&gt</td>
+                    <td>El elemento mark permite resaltar texto de interés. Piense en esto como si
+                        usara un resaltador en un libro para marcar pasajes que encuentre de interés.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/mark" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltq&gt</td>
+                    <td>El elemento q indica que el texto encerrado es una cita corta en línea. La
+                        mayoría de los navegadores modernos implementan esto rodeando el texto
+                        con comillas. Este elemento está destinado a citas breves que no requieren
+                        varias líneas.
+                        
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/q" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltblockquote&gt</td>
+                    <td>El elemento blockquote indica que el texto contenido es una cita extensa.
+
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltcite&gt</td>
+                    <td>El elemento cite permite incluir el nombre de un trabajo (Un libro, un ensayo,
+                        un poema, una película, una pintura, un programa de computadora, etc.). Este
+                        puede ser un trabajo que se cita en la pagina, o puede ser simplemente un
+                        trabajo que se menciona de pasada.
+                        
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/cite" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltdfn&gt</td>
+                    <td>El elemento dfn se utiliza para identificar el término a definir, mientras que la
+                        definición del término se coloca fuera del elemento. El contenido del
+                        elemento (es decir, el término) generalmente se representa en cursiva por
+                        parte de los navegadores.
+                        
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dfn" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltabbr&gt</td>
+                    <td>El elemento abbr se utiliza para identificar una abreviatura.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/abbr" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltsmall&gt</td>
+                    <td>El elemento small permite definir la letra chica y los comentarios secundarios
+                        de una página, como descargos de responsabilidad, derechos de autor,
+                        información sobre licencias y restricciones legales.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/small" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltins&gt</td>
+                    <td>El elemento ins marca las partes de un texto que han sido añadidos al
+                        documento.
+                        
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ins" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltdel&gt</td>
+                    <td>El elemento del marca las partes de un texto que han sido eliminadas del
+                        documento.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/del" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&lts&gt</td>
+                    <td>El elemento s muestra el texto tachado con una línea que lo atraviesa.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/s" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltcode&gt</td>
+                    <td>El elemento code muestra su contenido con formato para indicar que el texto
+                        es un fragmento corto de código de computadora.
+                        
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/code" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltsamp&gt</td>
+                    <td>El elemento samp se utiliza para encerrar texto que representa la salida de un
+                        programa de computadora (Los mensajes de la computadora al usuario).
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/samp" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltkbd&gt</td>
+                    <td>El elemento kbd representa un fragmento de texto en línea que indica la
+                        entrada del usuario desde un teclado (Aunque también se puede usar para
+                        representar otra entrada, como los comandos de voz).</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/kbd" target="_blank">Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>&ltpre&gt</td>
+                    <td>El elemento pre contiene texto que debe presentarse exactamente como está
+                        escrito en el archivo HTML.
+                        </td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/pre" target="_blank">Documentacion</a></td>
+                </tr>
+                
+                <tr>
+                    <td>&ltaddress&gt</td>
+                    <td>El elemento address indica que el HTML contenido proporciona información
+                        de contacto para una persona o personas, o para una organización.</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/address" target="_blank">Documentacion</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h5> </h5>
+        <br>
+        <h5> </h5>
+        <br>
+        <h5> </h5>
+        <br>
+   </div>
+</main>
+
+    <footer>
+        <address>sandra.mamani@ucb.edu.bo</address>
+    </footer>
+    
+</body>
+</html>
